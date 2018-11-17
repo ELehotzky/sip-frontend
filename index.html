@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<!--
+	Projection by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Sip</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/application.css" />
+		<link href="https://fonts.googleapis.com/css?family=Sancreek" rel="stylesheet">
+	</head>
+	<body>
+
+		<!-- Header (Template Removed) -->
+			<header id="header">
+			</header>
+
+
+			<!--login form-->
+
+					<div class="container">
+						<form class="login-form" style="">
+							<h3>Username</h3>
+							<input id="user-name" type="text" name="name" value="" placeholder="Enter your name..." class="input-text">
+							<br>
+							<fieldset>
+						<legend>Are you a Flatiron Student?</legend>
+						<div>
+								<input type="radio" id="flatiron-student" name="student" value="true" />
+								<label for="yes">Yes</label>
+						</div>
+						<div>
+								<input type="radio" id="not-a-flatiron-student" name="student" value="false"/>
+								<label for="no">No</label>
+						</div>
+						</fieldset>
+							<input type="submit" name="submit" value="Login User" class="submit">
+						</form>
+					</div>
+			
+
+
+
+
+
+		<!-- Welcome/Login -->
+			<section id="banner">
+				<div class="inner">
+					<header>
+						<h1 id="welcomeTitle">Sip</h1>
+					</header>
+
+					<div class="flex ">
+
+						<div>
+							<a href="#three"><span class="icon fa-glass"></span></a>
+							<h3>View drinks</h3>
+							<p>Browse our recipes</p>
+						</div>
+
+						<div>
+							<a href="#make-drink"><span class="icon fa-pencil-square"></span></a>
+							<h3>Create a drink</h3>
+							<p>Add to our collection</p>
+						</div>
+
+						<div>
+							<a href="#your-bar"><span class="icon fa-beer"></span></a>
+							<h3>See your bar</h3>
+							<p>Store the drinks you &hearts; </p>
+						</div>
+
+					</div>
+
+					<footer>
+
+						<a href="#" id="login-button" class="button">Login</a>
+
+					</footer>
+				</div>
+			</section>
+
+
+		<!-- Drinks We've Made - Main Body "Three" -->
+			<section id="three" class="wrapper align-center">
+				<div class="inner">
+					<div>
+						<a href="#" id="left-button" class="button"><span class="icon fa-arrow-left"></span></a>
+					</div>
+					<div class="flex flex-2">
+						<!---- Drinks will appear here from js ---->
+					</div>
+					<div>
+						<a href="#" id="right-button" class="button"><span class="icon fa-arrow-right"></span></a>
+					</div>
+
+				</div>
+			</section>
+
+			<!-- Section Break -->
+			<section id="banner">
+				<header id="header">
+				</header>
+			</section>
+
+			<!-- Make a drink: -->
+
+			<section>
+				<div class="inner">
+					<br><br>
+					<h3>Sip on your own:</h3>
+
+					<form id="make-drink">
+						<!-- Needs Name, Ingredients, Instructions, Likes, User ID-->
+						<!-- Drink Name Input-->
+						<div class="field half">
+							<label for="name">Drink Name</label>
+							<input name="drinkName" id="drinkName" type="text" placeholder="Drink Name">
+						</div>
+						<!-- User Name Input-->
+						<div class="field half">
+								<label for="name">User Name</label>
+								<input name="name" id="userName" type="text" placeholder="User Name">
+						</div>
+						<!-- Ingredients Inputs-->
+						<div class="field half first">
+							<label for="text">Drink Ingredients</label>
+							<input name="text" id="drinkIng1" type="text" placeholder="Ingredient 1">
+							<input name="text" id="drinkIng2" type="text" placeholder="Ingredient 2">
+							<input name="text" id="drinkIng3" type="text" placeholder="Ingredient 3">
+							<input name="text" id="drinkIng4" type="text" placeholder="Ingredient 4">
+							<input name="text" id="drinkIng5" type="text" placeholder="Ingredient 5">
+							<input name="text" id="drinkIng6" type="text" placeholder="Ingredient 6">
+						</div>
+						<!-- Instructions Input-->
+						<div class="field half second">
+							<label for="text">Instructions</label>
+							<textarea name="text" id="drinkInstructions" rows="9" placeholder="Shaken or stirred?  Tell us more.."></textarea>
+						</div>
+
+						<!-- Submit Drink Button-->
+					
+						<button id="submit-drink-button" class="button">Submit Drink</button>
+					
+					</form>
+				</div>
+			</section>
+
+			<!-- Your bar: -->
+			<section id="banner">
+				<div class="inner" id="your-bar">
+					<header>
+						<!-- Interpolate User Name-->
+						<h1 id="welcomeTitle">Your Bar</h1>
+					</header>
+
+					<div class="flex ">
+
+						<div><!-- Link to User's Drinks: max 3? -->
+							<span class="icon fa-glass"></span>
+							<h3>Thirsty?</h3>
+							<p>Add a drink to see your selections!</p>
+						</div>
+
+					</div>
+
+					<footer>
+						<a href="#" class="button">Get Started</a>
+					</footer>
+				</div>
+			</section>
+
+		<!-- Footer (Make your own drink)-->
+			<footer id="footer">
+				<div class="copyright">
+					Mod 3 Project for the Flatiron School<br>
+					Erica Lehotzky  <span class="icon fa-lemon-o"></span> Kelly Lwakatare  <span class="icon fa-lemon-o"></span> Cassandra Montoya
+				</div>
+				<br>
+				<div class="copyright">
+					&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="src/jquery.min.js"></script>
+			<script src="src/skel.min.js"></script>
+			<script src="src/util.js"></script>
+      <script src="src/main.js"></script>
+      <script src='src/index.js'></script>
+
+	</body>
